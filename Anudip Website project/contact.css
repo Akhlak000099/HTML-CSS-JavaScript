@@ -1,0 +1,351 @@
+body{
+    width: 100%;
+    /* height: 100vh; */
+
+    background-image: linear-gradient(orange,skyblue);
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.navbar{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: orange;
+    /* filter: blur(1px); */
+    z-index: 100;
+    overflow: hidden;
+   
+}
+.navmenu{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    transition: 00.5s;
+}
+.navmenu ul{
+    list-style-type: none;
+    display: flex;
+}
+.navmenu ul li{
+    position: relative;
+    /* width: auto; */
+    padding: 10px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 00.5s;
+}
+ .navmenu ul li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background:rgb(0, 0, 0);
+    bottom: 2px;
+    left: 0px;
+    transition: 00.5s;
+    opacity: 0.5;
+}
+.navmenu ul li:hover::after{
+    width: 100%;
+}
+.navmenu ul li a{
+color:black;
+text-decoration: none;
+opacity: 0.7;
+width: 100%;
+}
+.navbar .search{
+    position: relative;
+    align-items: center;
+}
+.search form{
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+.search form input:nth-child(1){
+    width: 420px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 0px 0px 0px 10px;
+    border-bottom: 5px solid black;
+    background-color: transparent;
+    padding: 10px 20px;
+    transition: 00.5s;
+    opacity: 0.7;
+    font-size: large;
+    color: white;
+}
+
+.search form input:nth-child(1):hover{
+    border-bottom: 5px solid black;
+    opacity: 0.4;
+
+}
+.search form input::placeholder{
+font-size: large;
+background-color:transparent;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+
+}
+
+.search form a{
+    position: relative;
+    width:80px;
+    padding: 6px 0px;
+    font-size:larger;
+    border-bottom: 5px solid black;
+    /* background-color: #999; */
+    border-radius:  0px 0px 10px 0px;
+    margin-left: 3px;
+    transition: 00.5s;
+    transform-origin: right;
+    opacity: 0.7;
+    color: white;
+
+}
+.search form a:hover{
+    border-bottom: 5px solid black;
+    opacity: 0.4;
+
+}
+.contact-page{
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding-top: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.contact-page h2{
+    text-transform: uppercase;
+    border-top: 2px dashed black;
+    text-align: center;
+    padding: 10px 0px;
+
+    border-bottom: 2px solid black;
+    opacity: 0.6;
+    font-style: italic;
+    font-weight: bold;
+    font-family: cursive;
+    color:white;
+    text-shadow: 3px 5px 3px black;
+}
+.contact-page form{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 20px;
+
+}
+.contact-page form label{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: cursive;
+    opacity: 0.6;
+}
+.contact-page form input{
+    margin: 10px;
+    width: 50%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-left: 1px dashed white;
+    border-bottom: 1px dashed wheat;
+    padding-left:  25px;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-family: cursive;
+    font-weight: bold;
+   
+}
+.contact-page form input::placeholder{
+
+    background-color: transparent;
+    font-size: large;
+    font-weight: bold;
+    font-family: cursive;
+    color:whitesmoke;
+}
+.contact-page form #comment{
+    position: absolute;
+    right: 40px;
+    top: 0px;
+}
+#comment textarea{
+padding: 20px;
+border-radius: 20px;
+color: lightgrey;
+font-family: cursive;
+font-weight: bold;
+font-size: large;
+outline: none;
+}
+.contact-page #submit{
+    cursor: pointer;
+    margin: 100px;
+    border: 2px solid white;
+    width: 140px;
+    text-align: center;
+    background-color: transparent;
+    transition: 1s;
+}
+.contact-page #submit:hover{
+    background-color: white;
+    color: black;
+}
+.contact-page #reset{
+    cursor: pointer;
+    margin: 100px;
+    border: 2px solid white;
+    width: 140px;
+    text-align: center;
+    background-color: transparent;
+    transition: 1s;
+}
+.contact-page #reset:hover{
+    background-color: white;
+    color: black;
+}
+.location{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    margin: 0px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0,0.5);
+
+}
+.contact{
+    width: 40%;
+    height: 80%;
+    position: relative;
+    margin: 0px;
+    justify-content: left;
+    align-items: center;
+    display: block;
+    border: 2px solid black;
+    opacity: 0.6;
+    border-radius: 20px;
+}
+.connect{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: large;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 10px black,0px 0px 20px black,0px 0px 30px black;
+    
+}
+.connect p{
+    position: relative;
+    /* border-bottom: 0px dashed black; */
+    opacity: 0.6;
+    transition: 00.5px;
+    cursor: pointer;
+    width: 100%;
+    
+}
+.connect p::after{
+    
+    width: 0%;
+    /* height: 5px; */
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    left: 0px;
+    border-bottom: 2px dashed black;
+    transition: 00.5s;
+   
+}
+.connect p:hover::after{
+    width: 100%;
+}
+.contact ul{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    margin: 0px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+}
+.contact ul li{
+   
+    border-radius: 50%;
+    /* background-color: red; */
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+   
+
+}
+.contact ul li a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 34px;
+    padding: 20px;
+
+    border-radius: 20px;
+    transition: 00.5s;
+    color: white;
+    border: 1px dashed black;
+    opacity: 0.6;
+
+}
+.contact ul li a:hover{
+    background-color: black;
+}
+.location iframe{
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    border-radius: 20px;
+    border: 5px solid black;
+}
+.footer{
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    border-top: 2px dashed black;
+    text-align: center;
+    font-size: large;
+    font-family: cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.location::before{
+    position: absolute;
+    content: '';
+    top: -4px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+   background-image: linear-gradient(skyblue,rgba(0,0,0,0.6));
+    z-index: 2;
+    filter: blur(2px);
+    opacity: 0.8;
+}

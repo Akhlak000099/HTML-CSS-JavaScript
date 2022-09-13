@@ -1,0 +1,361 @@
+.flower {
+    /* background-color: red; */
+    position: absolute;
+    align-items: center;
+    width: 50px;
+    display: flex;
+    justify-content: space-around;
+    top: 50px;
+    left: 650px;
+  }
+  .flower img{
+    /* position: absolute; */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    
+  
+   
+  }
+  
+  
+  @keyframes example {
+    0%   {
+   
+         transform: translateY(-100vh);
+         width: 0px;
+         opacity: 0;
+         
+    }
+    20%  { 
+       
+        opacity: 0.3;
+        width: 15px;
+
+    }
+    40%  { 
+       
+        opacity: 0.6;
+        width: 30px;
+    }
+    60%  { 
+        
+        opacity: 0.8;
+        width: 45px;
+    }
+    80% { 
+       
+        opacity: 1;
+        width: 60px;
+    }
+    100%{
+      transform: translateY(100vh);
+     
+        opacity: 0.3;
+        width: 75px;
+    
+
+    }
+  }
+  .flower img:nth-child(1){
+	animation-delay: 1s;
+	
+}
+.flower img:nth-child(2){
+	animation-delay: 2s;
+	/* width: 120px; */
+}
+.flower img:nth-child(3){
+	animation-delay: 3s;
+	/* width: 120px; */
+}
+.flower img:nth-child(4){
+	animation-delay: 1.2s;
+	/* width: 120px; */
+}
+
+.flower img:nth-child(5){
+	animation-delay: 2.2s;
+	/* width: 120px; */
+}
+.flower img:nth-child(6){
+	animation-delay: 3.2s;
+	/* width: 120px; */
+}
+
+.flower2 {
+  /* background-color: red; */
+  position: absolute;
+  align-items: center;
+  width: 50px;
+  display: flex;
+  justify-content: space-around;
+  top: 50px;
+  left: 600px;
+}
+
+.flower2 img{
+  /* position: absolute; */
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  
+
+ 
+}
+
+
+@keyframes example2 {
+  0%   {
+ 
+       transform: translateY(-100vh);
+       width: 0px;
+       opacity: 0;
+       
+  }
+  20%  { 
+     
+      opacity: 0.3;
+      width: 15px;
+
+  }
+  40%  { 
+     
+      opacity: 0.6;
+      width: 30px;
+  }
+  60%  { 
+      
+      opacity: 0.8;
+      width: 35px;
+  }
+  80% { 
+     
+      opacity: 1;
+      width: 40px;
+  }
+  100%{
+    transform: translateY(100vh);
+   
+      opacity: 0.3;
+      width: 50px;
+  
+
+  }
+}
+.flower2 img:nth-child(1){
+animation-delay: 2.5s;
+
+}
+.flower2img:nth-child(2){
+animation-delay: 1.5s;
+/* width: 120px; */
+}
+.flower2 img:nth-child(3){
+animation-delay: 2.2s;
+/* width: 120px; */
+}
+.flower2 img:nth-child(4){
+animation-delay: 1.2s;
+/* width: 120px; */
+}
+
+.flower2 img:nth-child(5){
+animation-delay: 1s;
+/* width: 120px; */
+}
+.flower2 img:nth-child(6){
+animation-delay: 2s;
+/* width: 120px; */
+}
+.diya{
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+.diya .fpart{
+
+  position: absolute;
+  top: 520px;
+  left: 0px;
+  width: 40%;
+  justify-content: space-around;
+}
+.diya .fpart span,img{
+  width: 100px;
+  margin: 0px 10px;
+  position: relative;
+}
+.diya .fpart span::after{
+  content: '';
+    position: absolute;
+    background:rgb(255, 217, 0);  
+    filter: blur(5px);
+    width: 15px;
+    height: 60px;
+    left: 51px;
+    top: -85px;
+    z-index:1;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgba(255, 217, 3, 0.9);
+    /* transform-origin: right;
+    transform: skewY(45deg); */
+    transition: 0.05s;
+    animation-name: animate2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+ 
+ 
+ }
+ @keyframes animate2{
+   0%{
+     transform:  scaleY(0.7) scaleX(1);
+   }
+   50%{
+     transform:  scaleY(1) scale(1.4);
+   }
+   100%{
+     transform:scaleY(0.8) scaleX(1);
+   }
+ }
+.diya .fpart span:nth-child(1)::after{
+  height: 70px;
+  top: -90px;
+}
+.diya .fpart span:nth-child(3)::after{
+  height: 70px;
+  top: -90px;
+}
+.diya .spart{
+  position: absolute;
+  top: 520px;
+  right: 0px;
+  width: 30%;
+  justify-content: space-around;
+}
+.diya .spart  span, img{
+  width: 90px;
+  margin: 0px 10px;
+  position: relative;
+}
+.diya .spart span::after{
+  content: '';
+    position: absolute;
+    background:rgb(255, 217, 0);  
+    filter: blur(4px);
+    width: 15px;
+    height: 60px;
+    left: 50px;
+    top: -85px;
+    z-index:1;
+    border-radius: 50%;
+    box-shadow: 10px 5px 20px rgba(255, 217, 3, 0.9);
+    /* transform-origin: right;
+    transform: skewY(45deg); */
+    transition: 0.05s;
+   animation-name: animate1;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in;
+
+
+}
+@keyframes animate1{
+  0%{
+    transform:  scaleY(0.8);
+  }
+  50%{
+    transform:  scaleY(1) ;
+  }
+  100%{
+    transform:scaleY(0.8) ;
+  }
+}
+.diya .spart span:nth-child(2)::after{
+  height: 80px;
+  top: -100px;
+}
+.text{
+  position: absolute;
+  left: 10px;
+  top: 200px;
+  width: 50%;
+
+}
+.txt{
+  position: absolute;
+  text-transform: uppercase;
+  transition: 00.5s;
+  display: block;
+  text-align: center;
+ 
+}
+.txt h2{
+  position: relative;
+  font-size: 4em;
+  font-weight: 800;
+  color: skyblue;
+  opacity: 0.5;
+  animation: text 6s 1;
+  transition: 0.5s;
+
+}
+@keyframes text {
+  0%{
+    color: skyblue;
+    margin-left: -700px;
+    letter-spacing: 1px;
+  }
+  50%{
+    letter-spacing: 3px;
+    margin-left: 10px;
+  }
+  80%{
+    letter-spacing: 2px;
+    margin-left: 10px;
+
+  }
+}
+.txt2{
+  width: 100%;
+  position: absolute;
+  text-transform: uppercase;
+  transition: 00.5s;
+  display: block;
+  text-align: center;
+  top: 75px;
+  /* left: 30px; */
+}
+.txt2 h2{
+  width: 100%;
+  position: relative;
+  font-size: 3.3em;
+  font-weight: 800;
+  color: skyblue;
+  opacity: 0.5;
+  animation: text2 6s 1;
+  transition: 0.5s;
+  text-align: center;
+  animation-delay: 2s;
+}
+@keyframes text2 {
+  0%{
+    color: skyblue;
+    margin-bottom: -70px;
+    letter-spacing: 1px;
+  }
+  50%{
+    letter-spacing: 3px;
+    margin-left: -70px;
+  }
+  80%{
+    letter-spacing: 2px;
+    margin-left: -70px;
+
+  }
+}
